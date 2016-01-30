@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="traceur-runtime@0.0.88" data-semver="0.0.88" src="https://cdn.rawgit.com/google/traceur-compiler/d3d0553de3315398a956dc2f9edd6a982d786b0a/bin/traceur-runtime.js"></script>
+    <script data-require="systemjs-runtime@0.0.1" data-semver="0.0.1" src="https://cdn.rawgit.com/ggoodman/systemjs-runtime/0.0.1/src/systemjs-runtime.js"></script>
+    <script data-require="zone.js@*" data-semver="0.4.1" src="https://cdn.rawgit.com/angular/zone.js/v0.4.1/zone.js"></script>
+    <script data-require="zone.js@*" data-semver="0.4.1" src="https://cdn.rawgit.com/angular/zone.js/v0.4.1/long-stack-trace-zone.js"></script>
+    <script src="https://cdn.rawgit.com/robwormald/e5c7e4a5e6efe06203a9/raw/8b161c90aecd8b311d17bcd48814ab46d1df48c2/angular2.js"></script>
+    <script>
+     System.baseURL = window.location.pathname;
+     System.import('main')
+       .then(function (main) {
+         main.run();
+       }, console.log.bind(console))
+    </script>
+  </head>
+
+  <body>
+    <test-app>
+      loading...  
+    </test-app>
+  </body>
+
+</html>
